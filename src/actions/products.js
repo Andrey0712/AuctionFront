@@ -1,4 +1,4 @@
-import { PRODUCTS } from "../constants/actionTypes";
+import { PRODUCT_LIST } from "../constants/actionTypes";
 import productService from "../services/product.service";
 
 
@@ -6,7 +6,7 @@ export const getProduct= () => async (dispatch) => {
     try {
         const {data} = await productService.get_list_prod();
         dispatch({
-            type: PRODUCTS,
+            type: PRODUCT_LIST,
             payload: data
         });
         return Promise.resolve();

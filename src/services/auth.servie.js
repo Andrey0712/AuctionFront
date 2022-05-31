@@ -17,6 +17,13 @@ class AuthDataService {
                 }
             });
     }
+    googleLogin(data) {
+        return http.post("api/account/GoogleExternalLogin", data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
      
     
 }

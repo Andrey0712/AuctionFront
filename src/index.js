@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import store, {history} from './store';
-import {authUser} from './actions/RegisterUser';
+import {authUser} from './actions/auth';
 
 const token = localStorage.authToken;
 

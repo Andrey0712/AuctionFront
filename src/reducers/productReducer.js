@@ -1,4 +1,4 @@
-import { PRODUCTS,REGISTER_PRODUCTS } from "../constants/actionTypes";
+import { PRODUCT_LIST,REGISTER_PRODUCTS } from "../constants/actionTypes";
 
 
 const initialState = {
@@ -8,7 +8,7 @@ const initialState = {
 function productReducer(state  = initialState, action) {
     const {type, payload} = action;
     switch(type){
-        case PRODUCTS: {
+        case PRODUCT_LIST: {
             return {
                 ...state,
                 list: payload

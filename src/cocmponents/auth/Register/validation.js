@@ -5,15 +5,19 @@ const validate=()=>{
 
     return Yup.object({
         email: Yup.string()
-            .email('Введіть валідні дані')
-            .required('Введіть пошту'),
-        name: Yup.string()
-            .required("Вкажіть прізвище"),  
+            .email('Не коректно вказана пошта')
+            .required("Вкажіть пошту"),
+        phone: Yup.string()
+            .required("Вкажіть телефон"),
+        secondName: Yup.string()
+            .required("Вкажіть прізвище"),
+        firstName: Yup.string()
+            .required("Вкажіть ім'я"),
         password: Yup.string()
-            .required('Вкажіть пароль.')
-            .min(3, 'Пароль має містить мінімум 3 символів.')
-            .matches(/[0-9]/, 'Пароль має містить хоча б одну цифру.'),
-        confirmpassword: Yup.string()
+            .required('Вкажіть пароль.') 
+            .min(5, 'Пароль має містить мінімум 5 символів.')
+            .matches(/[a-zA-Z]/, 'Пароль має містить латинські символи.'),
+        confirmPassword: Yup.string()
             .oneOf([Yup.ref('password'), null], 'Passwords must match')
             .required('Confirm Password is required'),
 

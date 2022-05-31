@@ -1,10 +1,12 @@
-export const REGISTER_AUTH = "REGISTER_AUTH";
-export const LOGIN_AUTH = "LOGIN_AUTH";
-export const LOG_OUT="LOG_OUT";
-export const USERS="USERS";
-export const REGISTER_BEGIN="REGISTER_BEGIN";
-export const REGISTER_FAILED="REGISTER_FAILED";
-export const PRODUCTS="PRODUCTS";
+export const LOGIN = 'LOGIN';
+export const REGISTER = 'REGISTER';
+export const REGISTER_BEGIN = 'REGISTER_BEGIN';
+export const REGISTER_FAILED = 'REGISTER_FAILED';
+export const LOGOUT = "LOGOUT";
 export const SET_ROLE = "SET_ROLE";
+
+export const PRODUCT_LIST = "PRODUCT_LIST";
 export const REGISTER_PRODUCTS = "REGISTER_PRODUCTS";
+
+export const USERS = "USERS";
 

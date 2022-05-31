@@ -6,7 +6,7 @@ const MyPhotoInput =({
     
 }) => {
 
-    const [photo, setPhoto] = useState("https://www.pairme.co/public/img/girl-default.jpg");   
+    const [photo, setPhoto] = useState("https://herrmans.eu/wp-content/uploads/2019/01/765-default-avatar.png");   
     
     const onChangeHandler = (event) => {
         const file = event.currentTarget.files[0];
@@ -18,7 +18,7 @@ const MyPhotoInput =({
     return (
         <div className="mb-3">
             <label htmlFor={field} className="form-label">
-                <img src={photo} alt="girl img"
+                <img src={photo} alt="no img"
                     width="150"
                     style={{cursor: "pointer"}}/>    
             </label>
