@@ -46,6 +46,7 @@ const RegisterPage = () => {
             dispatch(RegisterUser(formData))
                 .then(result => {
                     setLoading(false);
+                    toast.warn ("Реєстрація успішна",{position: toast.POSITION.BOTTOM_RIGHT,autoClose:5000});
                     dispatch(push("/"));
                 })
                 .catch(ex=> {

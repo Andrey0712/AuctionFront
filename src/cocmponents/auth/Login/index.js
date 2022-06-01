@@ -10,6 +10,10 @@ import jwt from 'jsonwebtoken';
 import { push } from 'connected-react-router';
 import GoogleLogin from 'react-google-login';
 import { gapi } from 'gapi-script';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
+
+toast.configure();
 
 const LoginPage = () => {
 
@@ -47,6 +51,7 @@ const LoginPage = () => {
                     //     dispatch(push("/admin"));
                     //     return;
                     // }
+                    toast.warn ("Авторизація успішна",{position: toast.POSITION.BOTTOM_RIGHT,autoClose:5000});
                     dispatch(push("/"));
                 })
                 .catch(ex => {
@@ -71,6 +76,7 @@ const LoginPage = () => {
                         dispatch(push("/admin"));
                         return;
                     }
+                    toast.warn ("Авторизація успішна",{position: toast.POSITION.BOTTOM_RIGHT,autoClose:5000});
                     dispatch(push("/"));
                 })
                 .catch(ex => {
