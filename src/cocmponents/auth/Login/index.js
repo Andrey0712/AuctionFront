@@ -28,7 +28,7 @@ const LoginPage = () => {
     useEffect(() => {
         const start = () => {
             gapi.client.init({
-                clientId: '436528464037-jt21etpk10kglcd0fllsua18g18tc9ul.apps.googleusercontent.com',
+                clientId: '523681892685-p9t6c2i45qb6p3qnpu6aom6lqdi9ln9r.apps.googleusercontent.com',
                 scope: ''
             });
         }
@@ -134,7 +134,7 @@ const LoginPage = () => {
                         <h1 ref={titleRef} className="text-center">Вхід на сайт через Google</h1>
                         <br/>
                         <GoogleLogin className="col-3 mx-auto justify-md-end d-md-flex"
-                    clientId="436528464037-jt21etpk10kglcd0fllsua18g18tc9ul.apps.googleusercontent.com"
+                    clientId="523681892685-p9t6c2i45qb6p3qnpu6aom6lqdi9ln9r.apps.googleusercontent.com"
                     buttonText="Login"
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle}
